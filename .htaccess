@@ -1,0 +1,16 @@
+RewriteEngine On
+
+RewriteRule "home" "index.php"
+RewriteRule "contact" "contact.php"
+RewriteRule "product" "topbrands.php"
+RewriteRule "login" "login.php"
+RewriteRule "cart" "cart.php"
+RewriteRule "orderdetails" "orderdetails.php"
+RewriteRule "profile" "profile.php"
+
+# chuyển đổi URL proidID
+RewriteRule "^([0-9]+)$" "details.php?proid=$1"
+
+# Đã chuyển đổi URL proidID qua dc rồi, giờ đang chuyển URL thêm proidID/ten_sp 
+# gán mặc định vào chưa dc do php chưa chấp nhận hàm khử unicode + dấu cách -> tìm cách gán hàm khử vào php --> thêm /ten_sp vào dc
+RewriteRule "^([0-9]+)/([a-zA-Z0-9-]+)$" "details.php?proid=$1&ten_sp=$2"

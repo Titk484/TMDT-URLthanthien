@@ -1,0 +1,9 @@
+Quản lý cửa hàng bán linh kiện máy tính
+B1: Vào thư mục config/config.php
+	Thay đổi define("DB_PASS", "Kk462002"); sang define("DB_PASS", "password root của bạn");
+B2: Khởi chạy phpmyadmin
+B3: Vào thư mục SQL để lấy file shop.sql
+	Chèn shop.sql vào cơ sở dữ liệu của bạn trên phpmyadmin
+B4: Khởi chạy web
+--------------------------------------------------------------------------------------------------
+					Chúc các bạn thành công
